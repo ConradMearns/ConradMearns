@@ -1,49 +1,133 @@
+---
+header-includes:
+  - \usepackage{tikz}
+  - \usetikzlibrary{mindmap}
+geometry:
+- top=1in
+- left=0.5in
+- right=0.5in
+- bottom=0.5in
+...
+\pagenumbering{gobble}
+\centering\Huge Conrad Mearns
+===============================================================================
 
-Conrad Mearns
-=========================================================================
-```
-| -------------- | ---------------------- | --------------------------- |
-| (208) 255-9280 | conradmearns@pm.me | mear8979@vandals.uidaho.edu |
-| -------------- | ---------------------- | --------------------------- |
-```
+\begin{table}[ht]
+\centering
+\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} c c}
+\\
+Moscow, ID & conradmearns@pm.me & (208) 255-9280 \\ [1ex]
+\hline\hline
+\end{tabular*}
+\end{table}
+
 
 Professional Profile
-=========================================================================
- - Junior Standing (GPA 3.27)
- - CompTIA A+ certified
-### Past Accomplishments
- - Student Body President (2013 - 2014)
- - Volunteer for Angels over Sandpoint
-### Areas of Expertise
-```
-|      Java      |     C/C++     |   Python   |
-| Linux (Debian) | Git Toolchain | Web Markup |
-```
+===============================================================================
+
+ - Senior Standing (GPA 3.42)
+ - Data Engineering Intern at the Pacific Northwest National Laboratory
+ - Researcher for Computational and Physical Systems \hfill (capsidaho.com)
+
+
+
+## Education
+Bachelor of Science in Computer Science at the *University of Idaho* \hfill Fall 2021
+
+
+
+## Familiar Tools
+<!-- SPLIT(graph.svg) -->
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[xscale=2,yscale=1.5]
+    \tikzstyle{vertex}=[circle,minimum size=10pt,inner sep=0pt]
+    \tikzstyle{edge} = [draw,-,black]
+    \node[vertex] (java)       at (-2.5, 1)  {Java};
+    \node[vertex] (imagej)     at (-1.5, 1)  {ImageJ};
+    \node[vertex] (keras)      at (-0.5, 1)  {Keras};
+    \node[vertex] (python)     at (0.5, 1)  {Python};
+    \node[vertex] (torch)      at (1.5, 1)  {PyTorch};
+    \node[vertex] (slurm)      at (2.5, 1)  {Slurm};
+    \node[vertex] (latex)      at (-3,-2)  {\LaTeX};
+    \node[vertex] (pandoc)     at (-3, 0)  {Pandoc};
+    \node[vertex] (p5js)       at ( 4,-2)  {p5js};
+    \node[vertex] (js)         at ( 3,-1)  {Javascript};
+    \node[vertex] (aframe)     at ( 4, 0)  {A-Frame};
+    \node[vertex] (bamboo)     at (0.5, 0) {Bamboo};
+    \node[vertex] (jira)       at (1.5,-1)  {Jira};
+    \node[vertex] (svelte)     at ( 2,-2)  {Svelte};
+    \node[vertex] (cdk)        at ( 2, 0)  {AWS CDK};
+    \node[vertex] (serf)       at (-1,-1)  {Serf};
+    \node[vertex] (nix)        at (-2,-1)  {Nix};
+    \node[vertex] (git)        at (-1, 0)  {Git};
+    \node[vertex] (seaweedfs)  at ( 0,-1)  {SeaweedFS};
+    \node[vertex] (nixos)      at (-1,-2)  {NixOS};
+    \node[vertex] (couch)      at ( 1,-2)  {CouchDB};
+    \draw[edge] (js) -- (svelte);
+    \draw[edge] (js) -- (aframe);
+    \draw[edge] (serf) -- (git);
+    \draw[edge] (bamboo) -- (jira);
+    \draw[edge] (cdk) -- (js) -- (p5js);
+    \draw[edge] (git) -- (python) -- (torch) -- (slurm);
+    \draw[edge] (git) --  (bamboo) -- (cdk);
+    \draw[edge] (nixos) -- (couch) -- (svelte);
+    \draw[edge] (latex) -- (pandoc) -- (nix) -- (latex);
+    \draw[edge] (git) -- (java) -- (imagej) -- (keras) -- (python);
+    \draw[edge] (git) -- (nix) -- (nixos) -- (serf) -- (seaweedfs) -- (nixos) -- (nix);
+\end{tikzpicture}
+\end{figure}
+<!-- ENDSPLIT -->
+
 
 Work History
-=========================================================================
-### M2 Construction - Sandpoint, ID
- - Assited with construction logitstics and general carpentry
- - Technical Support
- - Customer Service
- - May 2016 - Present
-
-### Staples - Sandpoint, ID
- - Assisted with Copy and Print center, Easy Tech, and customer service
- - August, 2015 - December 2015
-
-### XCraft - Sandpoint, ID
- - Utilized Solidworks for developing new products
- - Designed and built equipment to assist product assembly and logictics
- - June, 2015 - August 2015
+===============================================================================
 
 
-Education
-=========================================================================
-### BS Computer Engineering
- - University of Idaho
- - Expected graduation 2021
+**Pacific Northwest National Laboratory** \hfill _Remote - May 2020 – Current_
 
-### High School Diploma
- - Forrest M. Bird Charter School
- - Graduated June 2016
+\setlength{\leftskip}{0.3in}
+
+Created new databases to track capital, employee training, and job scheduling. Expanded Infrastructure-as-Code soltuions for multiple projects. Began Machine Learning work with Transformers.
+
+\setlength{\leftskip}{0cm}
+
+
+
+**Pacific Northwest National Laboratory** \hfill _Richland, WA - June 2019 – December 2019_
+
+\setlength{\leftskip}{0.3in}
+
+Created a frontend application for tracking distributed logs in AWS with Svelte. Assisted ETL pipeline creation in .NET. Deployed ETL pipelines using Code-as-Infrastructure paradigms
+
+\setlength{\leftskip}{0in}
+
+
+
+**M2 Construction** \hfill _Sandpoint, ID - May 2016 - August 2017_
+
+\setlength{\leftskip}{0.3in}
+
+Supervised subprojects, assisted with logistics and general carpentry. Provided technical consoltation and support.
+
+\setlength{\leftskip}{0in}
+
+
+
+**Staples** \hfill _Sandpoint, ID - August 2015 – December 2015_
+
+\setlength{\leftskip}{0.3in}
+
+Provided general computer support and diagnostics. Operated the Copy and Print Center. Helped guide customer purchases.
+
+\setlength{\leftskip}{0in}
+
+
+
+**XCraft** \hfill _Sandpoint, ID - June 2015 – August 2015_
+
+\setlength{\leftskip}{0.3in}
+
+Designed and built product line assembly stations. Designed new UAV products. Assembled XPlusOne drones
+
+\setlength{\leftskip}{0in}
