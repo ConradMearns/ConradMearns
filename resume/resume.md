@@ -84,7 +84,7 @@ Work History
 ===============================================================================
 
 
-**Pacific Northwest National Laboratory** \hfill _Remote - May 2020 – Current_
+**Pacific Northwest National Laboratory** \hfill _Remote - May 2020 – August 2020_
 
 \setlength{\leftskip}{0.3in}
 
