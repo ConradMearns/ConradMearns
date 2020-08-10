@@ -32,7 +32,7 @@ Professional Profile
 
 
 ## Education
-Bachelor of Science in Computer Science at the *University of Idaho* \hfill Fall 2021
+Bachelor of Science in Computer Science at the *University of Idaho* \hfill Fall 2020
 
 
 
